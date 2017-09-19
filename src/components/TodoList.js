@@ -10,6 +10,8 @@ const viewable = (todos, currentFilter) => {
       return todos.filter( t => !t.complete );
     case 'Completed':
       return todos.filter( t => t.complete );
+    default:
+      return todos;
   }
 }
 
